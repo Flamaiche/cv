@@ -23,7 +23,10 @@ async function stripGeneratedFiles(directory) {
     const path = join(directory, entry.name);
     if (entry.isDirectory()) {
       await stripGeneratedFiles(path);
-    } else if (entry.name.endsWith(".js") || entry.name.endsWith(".txt")) {
+    } else if (
+      entry.name.endsWith(".js") ||
+      (entry.name.endsWith(".txt") && entry.name !== "robots.txt")
+    ) {
       await rm(path);
     }
   }
