@@ -105,6 +105,14 @@ h2 {
   font-size: 0.9rem;
 }
 
+.sommaire {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
 section {
   margin-bottom: 2rem;
 }
@@ -188,7 +196,8 @@ section p {
     padding: 0;
   }
 
-  .allers {
+  .allers,
+  .sommaire {
     display: none;
   }
 

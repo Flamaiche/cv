@@ -5,10 +5,12 @@ import "./globals.css";
 const description =
   "CV de Hugo Richard, étudiant en BUT informatique à la recherche d'un stage de développement.";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: "Hugo Richard — CV",
   description,
-  icons: { icon: "data:," },
+  icons: { icon: `${basePath}/favicon.svg` },
   openGraph: {
     title: "Hugo Richard — CV",
     description,

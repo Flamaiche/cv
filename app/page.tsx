@@ -83,7 +83,7 @@ export default function Page() {
           <p className="infos">
             20 ans · Permis B et voiture · Cuincy (59553)
           </p>
-          <nav aria-label="Coordonnées">
+          <nav id="coordonnees" aria-label="Coordonnées">
             <ul className="contact">
               {contact.map(({ label, valeur, href }) => (
                 <li key={label}>
@@ -94,6 +94,12 @@ export default function Page() {
                 </li>
               ))}
             </ul>
+          </nav>
+          <nav aria-label="Sections du CV" className="sommaire">
+            <a href="#formation-titre" title="Aller à la formation">Formation</a>
+            <a href="#projets-titre" title="Aller aux projets informatiques">Projets</a>
+            <a href="#competences-titre" title="Aller aux compétences">Compétences</a>
+            <a href="#coordonnees" title="Aller aux coordonnées">Contact</a>
           </nav>
         </header>
 
