@@ -8,6 +8,7 @@ const description =
 export const metadata: Metadata = {
   title: "Hugo Richard — CV",
   description,
+  icons: { icon: "data:," },
   openGraph: {
     title: "Hugo Richard — CV",
     description,
